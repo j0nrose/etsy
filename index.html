@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsy - Handmade Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Craftsy</h2>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search for anything" id="searchInput">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Sign In</a>
+                <button class="cart-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="8" cy="21" r="1"></circle>
+                        <circle cx="19" cy="21" r="1"></circle>
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover unique, handmade treasures</h1>
+            <p>Support independent creators and find one-of-a-kind items you'll love</p>
+            <button class="cta-btn">Explore Now</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <svg width="400" height="300" viewBox="0 0 400 300" fill="none">
+                    <rect width="400" height="300" fill="#f8f9fa" rx="12"/>
+                    <circle cx="200" cy="150" r="60" fill="#ff6b6b"/>
+                    <circle cx="150" cy="120" r="40" fill="#4ecdc4"/>
+                    <circle cx="250" cy="180" r="35" fill="#45b7d1"/>
+                    <text x="200" y="260" text-anchor="middle" fill="#666" font-family="Arial" font-size="16">Handmade Items</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="jewelry">
+                    <div class="category-icon">💍</div>
+                    <h3>Jewelry</h3>
+                    <p>Handcrafted rings, necklaces & more</p>
+                </div>
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">🏠</div>
+                    <h3>Home & Living</h3>
+                    <p>Unique decor for your space</p>
+                </div>
+                <div class="category-card" data-category="art">
+                    <div class="category-icon">🎨</div>
+                    <h3>Art & Design</h3>
+                    <p>Original artwork & prints</p>
+                </div>
+                <div class="category-card" data-category="clothing">
+                    <div class="category-icon">👗</div>
+                    <h3>Clothing</h3>
+                    <p>Handmade fashion & accessories</p>
+                </div>
+                <div class="category-card" data-category="crafts">
+                    <div class="category-icon">✂️</div>
+                    <h3>Crafts</h3>
+                    <p>DIY supplies & handmade goods</p>
+                </div>
+                <div class="category-card" data-category="vintage">
+                    <div class="category-icon">🕰️</div>
+                    <h3>Vintage</h3>
+                    <p>Curated vintage finds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Items</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay in the loop</h2>
+                <p>Get the latest updates on new arrivals and special offers</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Craftsy</h3>
+                    <p>Discover unique, handmade treasures from independent creators around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Categories</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Local Stores</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sell</h4>
+                    <ul>
+                        <li><a href="#">Start Selling</a></li>
+                        <li><a href="#">Seller Handbook</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Craftsy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Cart</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
